@@ -30,7 +30,7 @@ module.exports = [
         document: 'readonly',
         navigator: 'readonly',
         console: 'readonly',
-        // Node globals
+        // Node globals (if needed)
         process: 'readonly',
         Buffer: 'readonly',
         __dirname: 'readonly',
@@ -43,11 +43,27 @@ module.exports = [
       prettier,
     },
     rules: {
-      ...vue.configs['vue3-recommended'].rules,
-      ...typescript.configs.recommended.rules,
-      'vue/multi-word-component-names': 'off',
-      '@typescript-eslint/explicit-module-boundary-types': 'off',
+      // Vue 3 recommended rules
+      'vue/no-unused-vars': 'error',
+      'vue/no-unused-components': 'error',
+      'vue/require-v-for-key': 'error',
+      'vue/no-use-v-if-with-v-for': 'error',
+      'vue/valid-template-root': 'error',
+      'vue/valid-v-bind': 'error',
+      'vue/valid-v-if': 'error',
+      'vue/valid-v-for': 'error',
+      'vue/valid-v-on': 'error',
+      'vue/valid-v-model': 'error',
+      
+      // TypeScript rules
+      '@typescript-eslint/no-unused-vars': 'error',
       '@typescript-eslint/no-explicit-any': 'warn',
+      '@typescript-eslint/explicit-module-boundary-types': 'off',
+      
+      // Custom Vue rules
+      'vue/multi-word-component-names': 'off',
+      
+      // Prettier rules
       'prettier/prettier': [
         'error',
         {
@@ -74,7 +90,7 @@ module.exports = [
         document: 'readonly',
         navigator: 'readonly',
         console: 'readonly',
-        // Node globals
+        // Node globals (if needed)
         process: 'readonly',
         Buffer: 'readonly',
         __dirname: 'readonly',
@@ -86,9 +102,12 @@ module.exports = [
       prettier,
     },
     rules: {
-      ...typescript.configs.recommended.rules,
-      '@typescript-eslint/explicit-module-boundary-types': 'off',
+      // TypeScript rules
+      '@typescript-eslint/no-unused-vars': 'error',
       '@typescript-eslint/no-explicit-any': 'warn',
+      '@typescript-eslint/explicit-module-boundary-types': 'off',
+      
+      // Prettier rules
       'prettier/prettier': [
         'error',
         {
@@ -112,7 +131,7 @@ module.exports = [
         document: 'readonly',
         navigator: 'readonly',
         console: 'readonly',
-        // Node globals
+        // Node globals (if needed)
         process: 'readonly',
         Buffer: 'readonly',
         __dirname: 'readonly',
@@ -126,6 +145,7 @@ module.exports = [
       prettier,
     },
     rules: {
+      // Prettier rules
       'prettier/prettier': [
         'error',
         {
