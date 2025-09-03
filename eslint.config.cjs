@@ -30,7 +30,8 @@ module.exports = [
         document: 'readonly',
         navigator: 'readonly',
         console: 'readonly',
-        // Node globals (if needed)
+        fetch: 'readonly',
+        // Node globals 
         process: 'readonly',
         Buffer: 'readonly',
         __dirname: 'readonly',
@@ -56,7 +57,8 @@ module.exports = [
       'vue/valid-v-model': 'error',
       
       // TypeScript rules
-      '@typescript-eslint/no-unused-vars': 'error',
+      '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
+      'no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
       '@typescript-eslint/no-explicit-any': 'warn',
       '@typescript-eslint/explicit-module-boundary-types': 'off',
       
@@ -90,7 +92,8 @@ module.exports = [
         document: 'readonly',
         navigator: 'readonly',
         console: 'readonly',
-        // Node globals (if needed)
+        fetch: 'readonly',
+        // Node globals 
         process: 'readonly',
         Buffer: 'readonly',
         __dirname: 'readonly',
@@ -103,7 +106,8 @@ module.exports = [
     },
     rules: {
       // TypeScript rules
-      '@typescript-eslint/no-unused-vars': 'error',
+      '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
+      'no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
       '@typescript-eslint/no-explicit-any': 'warn',
       '@typescript-eslint/explicit-module-boundary-types': 'off',
       
@@ -131,7 +135,8 @@ module.exports = [
         document: 'readonly',
         navigator: 'readonly',
         console: 'readonly',
-        // Node globals (if needed)
+        fetch: 'readonly',
+        // Node globals 
         process: 'readonly',
         Buffer: 'readonly',
         __dirname: 'readonly',
