@@ -37,12 +37,17 @@
             <div
               class="flex bg-white/10 backdrop-blur-sm rounded-full border border-blue-400/30 overflow-hidden hover:border-blue-400/50 transition-all duration-300 group"
             >
+              <label for="newsletter-email" class="sr-only"
+                >E-mail para receber ofertas exclusivas</label
+              >
               <input
+                id="newsletter-email"
                 type="email"
                 placeholder="Seu e-mail para ofertas exclusivas"
                 class="bg-transparent text-white placeholder-blue-200 px-6 py-3 flex-1 focus:outline-none"
               />
               <button
+                aria-label="Inscrever-se na Newsletter"
                 class="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 px-6 py-3 transition-all duration-200 group-hover:scale-105"
               >
                 <i class="pi pi-send text-white"></i>
@@ -222,6 +227,7 @@
         <div class="flex items-center gap-4">
           <div class="flex gap-3">
             <a
+              aria-label="Abrir projeto no GitHub (abre em nova aba)"
               target="_blank"
               rel="noopener"
               href="https://github.com/feliveira/ecommerce-vue"

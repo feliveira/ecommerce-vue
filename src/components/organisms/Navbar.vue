@@ -12,11 +12,11 @@
             <i class="pi pi-shopping-bag text-white text-lg"></i>
           </div>
           <div>
-            <h1
+            <span
               class="text-2xl font-bold bg-gradient-to-r from-blue-300 via-zinc-100 to-zinc-300 bg-clip-text text-transparent"
             >
               FakeStore
-            </h1>
+            </span>
             <p class="text-xs text-zinc-50 -mt-1">Premium Collection</p>
           </div>
         </div>
@@ -26,6 +26,7 @@
           <!-- Cart button -->
           <div v-if="showCart" class="relative">
             <button
+              aria-label="Abrir carrinho"
               class="relative p-3 w-12 h-12 flex items-center justify-center bg-gradient-to-br from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 rounded-full transition-all duration-200 transform hover:scale-105 shadow-lg border border-blue-400/30"
             >
               <i class="pi pi-shopping-cart text-lg"></i>
