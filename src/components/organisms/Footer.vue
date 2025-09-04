@@ -238,22 +238,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Floating particles effect -->
-      <div class="absolute top-0 left-0 w-full h-full pointer-events-none">
-        <div
-          class="absolute top-1/4 left-1/4 w-2 h-2 bg-blue-400/30 rounded-full animate-ping"
-          style="animation-delay: 0s; animation-duration: 3s"
-        ></div>
-        <div
-          class="absolute top-3/4 right-1/4 w-1 h-1 bg-blue-400/30 rounded-full animate-ping"
-          style="animation-delay: 1s; animation-duration: 4s"
-        ></div>
-        <div
-          class="absolute top-1/2 right-1/3 w-1.5 h-1.5 bg-blue-300/20 rounded-full animate-ping"
-          style="animation-delay: 2s; animation-duration: 5s"
-        ></div>
-      </div>
     </div>
   </footer>
 </template>
